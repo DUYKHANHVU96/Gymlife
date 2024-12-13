@@ -213,10 +213,12 @@ button {
     border-bottom-color: #BDB76B;
     border-right-color: #BDB76B;
 }
-
+.price-card h3{
+    font-size: 13px;
+}
 .price-card h4 {
     color: #fff;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .price-title {
@@ -354,6 +356,7 @@ footer .subscribeForm button {
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+    
 }
 
 .footer-nav {
@@ -361,14 +364,16 @@ footer .subscribeForm button {
     margin-top: 2rem;
     width: 60%;
     justify-content: space-evenly;
+    text-decoration: none;
 }
 
 .footer-menu {
     margin: 0 2rem;
+    text-decoration: none;
 }
 
 .footer-menu h3 {
-    color: #fff;
+    color: #737276;
     font-size: 20px;
     padding: .5rem 0;
     margin-bottom: 1rem;
@@ -382,9 +387,11 @@ footer .subscribeForm button {
 .footer-menu ul a li {
     font-size: 18px;
     margin: .5rem 0;
-    text-decoration: none;
 }
-
+.footer-menu ul a i{
+   display: flex;
+   justify-content: center;
+}
 .footer-menu ul a:hover {
     color: #BDB76B;
 }
