@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo h1 {
@@ -79,29 +80,322 @@ button {
     font-size: 20px;
 }
 
-.Section {
+.Service-sec {
+    background-color: red;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: rgba(255, 106, 0, 0.733); */
     width: 100%;
-    height: 800px;
+    justify-content: center;
+    color: #fff;
 }
-.Left, .Right{
-width: 50%;
-height: 800px;
-padding: 10px;
-box-sizing: border-box;
-} 
-.Left {
-background-color: orange;
+
+.Service-sec .card-container {
+    width: 50%;
+    padding-left: 30px;
+
 }
-.Right{
+
+.Service-sec .card-container:first-child {
+    background: radial-gradient(circle, yellow, green);
+    position: relative;
+}
+
+.Service-sec .card-container:first-child img {
+    position: absolute;
+    right: 1rem;
+    top: 20%;
+}
+
+.Service-sec .card-container:first-child:before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: -1rem;
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(circle, yellow, green);
+    transform: rotate(225deg);
+}
+
+.Service-sec .card-container:last-child {
+    padding: 1rem 3rem;
+    padding-top: 3rem;
+}
+
+.Service-card {
+    margin-bottom: 2rem;
+}
+
+.Service-card .card-title {
+    display: flex;
+    align-items: center;
+}
+
+.Service-card .card-title img {
+    width: 35px;
+}
+
+.Service-card .card-title h2 {
+    margin-left: 1rem;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.Service-card p {
+    padding: 1rem 0;
+    padding-left: 3rem;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 21px;
+    width: 80%;
+    opacity: .7;
+}
+
+.pricing-sec {
+    padding: 2rem 0;
+    background: #192a56;
+}
+
+.section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.price-card {
+    padding: 1rem;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px bold #BDB76B;
+    position: relative;
+}
+
+.price-card:hover {
+    transform: scale(1.1);
+}
+
+.price-card:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -1.5rem;
+    left: -1.5rem;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    border-top-color: #BDB76B;
+    border-left-color: #BDB76B;
+}
+
+.price-card::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -1.5rem;
+    right: -1.5rem;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    border-bottom-color: #BDB76B;
+    border-right-color: #BDB76B;
+}
+
+.price-card h4 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.price-title {
+    color: #BDB76B;
+    margin-top: 1rem;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.price-card ul li {
+    margin-top: .5rem;
+    color: #fff;
+}
+
+.price-card a {
+    padding: .8rem 1.5rem;
+    margin-top: 1rem;
+    background: #BDB76B;
+    border: 2px solid #BDB76B;
+}
+
+.price-card a:hover {
+    background: transparent;
+}
+
+.gallery-sec {
+    padding: 2rem 0;
+    background-color: #BDB76B;
+}
+
+.gallery-row {
+    padding: 2rem 0;
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.gallery-card {
+    width: 380px;
+    height: 320px;
+    box-shadow: 0 0 20px #000;
+}
+
+.gallery-card img {
+    height: 100%;
+    width: 100%;
+}
+
+.about-sec {
+    display: flex;
+    background: #fff;
+    padding: 2rem 0;
+    justify-content: center;
+    background-color: green;
+}
+
+.about-card {
+    padding: 1rem;
+    width: 400px;
+    height: 370px;
+    margin: 0 2rem;
+}
+
+.about-card:first-child {
+    width: 550px;
+}
+
+.about-card:first-child h3 {
+    color: brown;
+    font-size: 35px;
+}
+
+.about-card:first-child p {
+    margin-top: 2rem;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 2rem;
+}
+
+.footer-nav {
+    background-color: #68228B;
+}
+
+.footer-menu ul a {
+    color: #fff;
+}
+
+.about-card:first-child a {
+    padding: .8rem 1.5rem;
+    background: #1d5619;
+}
+
+.about-card:first-child a:hover {
+    letter-spacing: 2px;
+}
+
+.about-card:last-child {
+    height: 330px;
+    box-shadow: 0 0 20px #000;
+}
+
+footer {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 4px solid #BDB76B;
     background-color: violet;
 }
-.YogaClass img {
-    position: absolute;
-    width: 50%;
-    height: 400px;
-    padding: 30px;
+
+footer .subscribeForm {
+    width: 620px;
+    height: 55px;
+    display: flex;
+}
+
+footer .subscribeForm input {
+    width: 75%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+footer .subscribeForm button {
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    background: #BDB76B;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: flex;
+    margin-top: 2rem;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.footer-menu {
+    margin: 0 2rem;
+}
+
+.footer-menu h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #BDB76B;
+}
+
+.footer-menu ul {
+    list-style: none;
+}
+
+.footer-menu ul a li {
+    font-size: 18px;
+    margin: .5rem 0;
+    text-decoration: none;
+}
+
+.footer-menu ul a:hover {
+    color: #BDB76B;
+}
+
+.copyright {
+    padding: 1rem 0;
+    border-top: 4px solid #BDB76B;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
 }
