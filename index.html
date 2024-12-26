@@ -11,19 +11,33 @@
 
 <body>
   <div class="Header">
-    <div class="logo">
-      <h2><span class="primary_color">VN GYM </span>& LIFE</h2>
+    <div class="header_logo">
+      <div class="logo">
+        <h2><span class="primary_color">VN GYM </span>& LIFE</h2>
+      </div>
+      <ul class="nav_menu" id="nav_menu">
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+      <span><button class="toggle-button" id="toggle-button">
+        ☰
+      </button></span>
+      <div class="search_menu">
+        <div class="search-container">
+          <input type="text" id="search-box" placeholder="Nhập từ khóa cần tìm...">
+          <span><button id="search-button">
+              <i class="fas fa-search"></i>
+          </button></span>
+        </div>
+        <div id="info-popup" class="hidden">
+          <span id="close-popup">✖</span>
+          <p id="popup-content"></p>
+        </div>
+      </div>
     </div>
-    <ul class="nav_menu" id="nav_menu">
-      <li><a href="#">Programs</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#">Schedule</a></li>
-      <li><a href="#">Membership</a></li>
-      <li><a href="#">Blogs</a></li>
-    </ul>
-    <button class="toggle-button" id="toggle-button">
-      ☰
-    </button>
   </div>
   <div class="home_sec">
     <div class="home_form">
